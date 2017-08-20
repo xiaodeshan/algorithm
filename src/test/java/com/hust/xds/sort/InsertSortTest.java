@@ -5,14 +5,14 @@ import java.util.Random;
 import org.junit.Test;
 
 /**
- * 快速排序测试类
+ * 直接插入排序测试类
  *
  * @author Deshan Xiao
  */
-public class QuickSortTest {
+public class InsertSortTest {
 	@Test
-	public void testQuickSort() {
-		int randomNum = 100000;
+	public void testInsertSort() {
+		int randomNum = 10000;
 		Random random = new Random();
 
 		int arr[] = new int[randomNum];
@@ -20,13 +20,12 @@ public class QuickSortTest {
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = random.nextInt(randomNum << 2);
 		}
-		QuickSort.sort(arr);
+		InsertSort.sort(arr);
 
 		for (int i = 0; i < arr.length; i++) {
 			if (i != 0)
 				assert arr[i] >= arr[i - 1];
 			System.out.println(arr[i]);
-
 		}
 	}
 }
