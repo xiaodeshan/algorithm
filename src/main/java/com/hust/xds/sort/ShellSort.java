@@ -7,9 +7,9 @@ import com.hust.xds.util.Utils;
  *
  * @author Deshan Xiao
  */
-public class ShellSort {
+public class ShellSort implements Sortable{
 
-	public static void sort(int[] arr) {
+	public void sort(int[] arr) {
 		int len = arr.length;
 
 		for (int grap = (len >> 1); grap > 0; grap = (grap >> 1)) {

@@ -7,8 +7,8 @@ import com.hust.xds.util.Utils;
  *
  * @author Deshan Xiao
  */
-public class InsertSort {
-	public static void sort(int[] arr) {
+public class InsertSort implements Sortable{
+	public void sort(int[] arr) {
 		int len = arr.length;
 
 		for (int i = 1; i < len; i++) {
